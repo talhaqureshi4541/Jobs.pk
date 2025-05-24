@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post a Job</title>
+    <link rel="stylesheet" href="post.css">
+    <link rel="stylesheet" href="responsive(post).css">
+</head>
+<body>
+    <nav>
+        <h1>Post A Job</h1>
+    </nav>
+    <div class="form-container">
+        <h2>Post a Job</h2>
+        <form action="https://formspree.io/f/manogwyl" method="POST">
+            <label for="company_name">Company Name:</label>
+            <input type="text" id="company_name" name="company_name" required><br>
+
+            <label for="job_title">Job Title:</label>
+            <input type="text" id="job_title" name="job_title" required><br>
+
+            <label for="job_description">Job Description:</label>
+            <textarea id="job_description" name="job_description" rows="4" required></textarea><br>
+
+            <label for="required_qualifications">Required Qualifications:</label>
+            <input type="text" id="required_qualifications" name="required_qualifications" required><br>
+
+            <label for="salary_range">Salary Range:</label>
+            <input type="text" id="salary_range" name="salary_range" required><br>
+
+            <div class="buttons">
+                <button type="button" id="cancelBtn">Cancel</button>
+                <button type="submit">Post Job</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Handle cancel button: Redirect back to home page
+        document.getElementById('cancelBtn').addEventListener('click', function() {
+            window.location.href = 'index.html';
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loader</title>
+    <style>
+        body{
+            position: relative;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            padding-top: 20%;
+        }
+        .loader {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 15px solid rgb(213, 210, 210);
+            border-top: 15px solid rgb(142, 139, 139);
+            animation: spinAnimate 1s ease-in-out 0s infinite normal;
+        }
+        @keyframes spinAnimate{
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="loader"></div>
+</body>
+</html>
